@@ -13,7 +13,6 @@ dotenv.config();
 const app = express()
 app.use(cors())
 
-// const isProduction = process.env.NODE_ENV === "production";
 const connectionString = process.env.POSTGRES_URI
 const db= knex({
   client: 'pg',
